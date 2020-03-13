@@ -89,6 +89,87 @@
         </div>
     </div>
 
+    <div id="modalForm" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <form>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Reserve your baskets </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group row">
+
+                            <div class="col-md-4 ">
+                                Number of baskets
+
+                            </div>
+
+                            <div class="col-md-8">
+
+                                <input type="radio" name="number_of_baskets" id="one" value="one">
+                                <label class="mr-2" for="one">1</label>
+                                <input type="radio" name="number_of_baskets" id="two" value="two">
+                                <label class="mr-2" for="two">2</label>
+                                <input type="radio" name="number_of_baskets" id="three" value="three">
+                                <label class="mr-2" for="three">3</label>
+                                <input type="radio" name="number_of_baskets" id="four" value="four">
+                                <label class="mr-2" for="four">4</label>
+                                <input type="radio" name="number_of_baskets" id="five" value="five">
+                                <label class="mr-2" for="five">5</label>
+                                <input type="radio" name="number_of_baskets" id="six" value="six">
+                                <label class="mr-2" for="six">6</label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4 ">
+                                Date and time
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group input-group-md">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><span class="fa fa-calendar"></span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="dd-----yyyy" name="day">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group input-group-md">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><span class="fa fa-clock-o"></span></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="--:-- --" name="time">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4 ">
+                                Home Delivery
+                            </div>
+                            <div class="col-md-8">
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-success"><input type="radio"
+                                            name="home_delivery_option" id="yes" value="yes" checked> Yes</button>
+                                    <button type="button" class="btn btn-danger"><input type="radio"
+                                            name="home_delivery_option" id="no" value="no"> No</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light btn-sm" data-dismiss="modal">Cancel
+                        </button>
+                        <button type="submit" class="btn btn-primary btn-sm">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -101,9 +182,8 @@
                     <img src="images/logo.png" class="img-fluid">
                 </div>
                 <div class="col-4 align-self-center">
-                    <a type="button" class="btn btn-warning btn-sm btn-block" data-toggle="tooltip" data-html="true"
-                        title="Or Call us at <br> <strong> + 987 6543 2100 </strong>" data-placement="bottom"
-                        href="#myform">
+                    <a type="button" class="btn btn-warning btn-sm btn-block" data-toggle="modal"
+                        data-target="#modalForm">
                         Reserve your baskets
                     </a>
                 </div>
@@ -152,8 +232,7 @@
                         </div>
                     </div>
                     <ol class="carousel-indicators">
-                        <li data-target="#mycarousel" data-slide-to="0" class
-                          ="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#mycarousel" data-slide-to="1"></li>
                         <li data-target="#mycarousel" data-slide-to="2"></li>
                     </ol>
@@ -229,82 +308,6 @@
                 </div>
             </div>
         </div>
-        <div class="row row-content align-items-sm-center">
-            <div class="col-12 col-md-8">
-                <div class="card">
-                    <form id="myform">
-                        <div>
-                            <div class="card-header bg-warning">
-                                Reserve your baskets
-                            </div>
-                            <div class="card-body">
-
-
-
-                                <div class="form-group row">
-                                    <div class="col-md-4 ">
-                                        Number of baskets
-
-                                    </div>
-
-                                    <div class="col-md-8">
-
-                                        <input type="radio" name="number_of_baskets" id="one" value="one">
-                                        <label class="mr-2" for="one">1</label>
-                                        <input type="radio" name="number_of_baskets" id="two" value="two">
-                                        <label class="mr-2" for="two">2</label>
-                                        <input type="radio" name="number_of_baskets" id="three" value="three">
-                                        <label class="mr-2" for="three">3</label>
-                                        <input type="radio" name="number_of_baskets" id="four" value="four">
-                                        <label class="mr-2" for="four">4</label>
-                                        <input type="radio" name="number_of_baskets" id="five" value="five">
-                                        <label class="mr-2" for="five">5</label>
-                                        <input type="radio" name="number_of_baskets" id="six" value="six">
-                                        <label class="mr-2" for="six">6</label>
-                                    </div>
-
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-md-4 ">
-                                        Date and time
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="input-group input-group-md">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><span
-                                                        class="fa fa-calendar"></span></span>
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="dd-----yyyy">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="input-group input-group-md">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><span
-                                                        class="fa fa-clock-o"></span></span>
-                                            </div>
-                                            <input type="text" class="form-control" placeholder="--:-- --">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-md-10">
-                                        <button type="submit" class="btn btn-primary">Reserve</button>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -361,11 +364,6 @@
         <script src="node_modules/tether/dist/js/tether.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script>
-            $(function () {
-                $('[data-toggle="tooltip"]').tooltip()
-            })
-        </script>
 </body>
 
 </html>
