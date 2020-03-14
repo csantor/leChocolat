@@ -64,3 +64,16 @@ tr:hover {
     position: absolute;
     bottom: -30px;
 }
+.imagesize {
+    width: 300px;
+    overflow: hidden;
+}
+.link-unstyled {
+    text-decoration: none !important;
+}
+a h4 {
+    color: #6E3F19;
+}
+#accordion .imagesize {
+    width:1000px;
+}
