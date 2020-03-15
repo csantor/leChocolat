@@ -33,7 +33,7 @@ body{
 }
 .table .thead-dark th{
     color:floralwhite;
-    background-color:#6E3F19
+    background-color:#6E3F19;
 }
 tr:hover {
     background-color:#dbb08d !important;
@@ -47,8 +47,8 @@ tr:hover {
     border-bottom: 1px solid #ddd;
     padding: 10px;
   }
-  .carousel {
-    background:#914d15b0
+.carousel {
+    background:#914d15;
 }
 .carousel-item {
   height: 300px;
