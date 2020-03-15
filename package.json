@@ -25,9 +25,12 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.0",
+    "clean-css": "^4.2.3",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
+    "minimist": "^1.2.5",
     "popper.js": "^1.16.1",
-    "tether": "^1.4.4"
+    "tether": "^1.4.4",
+    "uglify-js": "^3.8.0"
   }
 }
